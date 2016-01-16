@@ -1,9 +1,11 @@
-<div class="row">
+<div class="row ">
   <div class="col-md-8 ">
     <% @books.each do |b| %>
-      <p>Title: <%= b.title %></p>
-      <p>Author: <%= b.author %></p>
-      <p><%= link_to 'More', book_path(b) %></p>
+      <div class="review">
+        <p class="title">Title: <%= b.title %></p>
+        <p class="author">Author: <%= b.author %></p>
+        <p><%= link_to 'More', book_path(b), class: "btn btn-primary more-btn" %></p>
+        </div>
     <% end %>
   </div>
 </div>
