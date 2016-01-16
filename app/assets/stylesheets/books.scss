@@ -2,6 +2,19 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.error, .success {
+  background: #911;
+  opacity: .6;
+  color: #fff;
+  font-style: italic;
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 2px;
+}
+
+.success {
+  background: #191;
+}
 
 .books {
   background-color: lightblue;
