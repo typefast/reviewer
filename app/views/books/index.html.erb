@@ -1,6 +1,10 @@
+<div class="row">
+  <div class="col-md-8 ">
+    <% @books.each do |b| %>
+      <p>Title: <%= b.title %></p>
+      <p>Author: <%= b.author %></p>
+      <p><%= link_to 'More', book_path(b) %></p>
+    <% end %>
+  </div>
+</div>
 
-<% @books.each do |b| %>
-  <p>Title: <%= b.title %></p>
-  <p>Author: <%= b.author %></p>
-  <p><%= link_to 'More', book_path(b) %></p>
-<% end %>
