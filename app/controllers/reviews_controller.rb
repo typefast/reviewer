@@ -6,10 +6,10 @@ class ReviewsController < ApplicationController
   
   def create
     @book = Book.find(params[:book_id])
-    @review = @book.review.create(review_params)
+    @review = @book.reviews.create(review_params)
     if @review.save
       flash[:success] = "Review Added."
-      redirect_to @book_path
+      redirect_to book_path(@book)
     else
       flash[:error] = "There was an error."
       render :new
