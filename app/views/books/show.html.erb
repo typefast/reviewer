@@ -5,3 +5,8 @@
 <h4>Reviews</h4>
 
 <%= link_to "New review", new_book_review_path(@book) %>
+
+<% @book.reviews.each do |r| %>
+  <p><%= r.name %></p>
+  <p><%= r.comment %></p>
+<% end %>
