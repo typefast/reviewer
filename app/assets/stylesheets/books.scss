@@ -3,12 +3,13 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-.review {
+.books {
   background-color: lightblue;
   opacity: .8;
   color: #fff;
   margin-top: 1em;
   border-radius: 5px;
+  box-shadow: 2px 2px 5px #333;
   
   .title {
     font-weight: bold;
@@ -24,5 +25,26 @@
   
   .more-btn {
     margin: 1em;
+  }
+}
+
+
+.reviews {
+  background: #3c3;
+  border-radius: 5px;
+  color: #fff;
+  padding: 1em;
+  
+  .reviews-title {
+    display: inline-block;
+  }
+  
+  .new-review-btn {
+    margin-left: 2em;
+  }
+  
+  .comments {
+    border-bottom: 1px solid #fff;
+    padding: .5em;
   }
 }
